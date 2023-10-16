@@ -129,7 +129,7 @@ const LoginPage = () => {
           <Button onClick={loginWithEmail} text="Login" tyeOfLogin={false} loader={loader} />
           <p style={{ textAlign: "center" }}>Or</p>
           <Button onClick={loginWithGoogle} text="Login with Google" tyeOfLogin={true} loader={loader} />
-					<p style={{ textAlign: "center", padding:"0.7rem 0px 0px 0px" }}>Don't have an Account? <NavLink to="/">Signup</NavLink></p>
+					<p style={{ textAlign: "center", padding:"0.7rem 0px 0px 0px" }}>Don't have an Account? <NavLink to="/signup">Signup</NavLink></p>
         </form>
       </div>
     </div>
