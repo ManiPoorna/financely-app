@@ -1,0 +1,82 @@
+.ant-table-wrapper {
+    width: 94% !important;
+    margin: 0px auto !important;
+}
+
+.ant-table-wrapper .ant-table-pagination.ant-pagination {
+    display: none !important;
+}
+
+.tabble-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ant-input-1 {
+    font-weight: 500;
+    padding: 0.3rem 1rem !important;
+    width: 70% !important;
+    border: 1px solid #28282846 !important;
+    border-radius: 5px !important;
+    box-shadow: var(--shadow);
+}
+
+.select-antd {
+    width: 23% !important;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    /* padding: 1rem; */
+}
+
+.search-option {
+    padding: 0.6rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-btn {
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.radio-btn .radio-btns{
+    box-shadow: var(--shadow);
+    border-radius: 7px;
+}
+.btns {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+#import-csv,
+#export-csv {
+    display: none;
+}
+
+.normal:active {
+    transform: scale(0.95);
+}
+
+.normal {
+    margin: 0.5rem 0px;
+    width: 100%;
+    padding: 0.5rem 0.4rem;
+    font-size: 14px;
+    color: var(--theme);
+    background-color: transparent;
+    border: 1px solid var(--theme);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+table {
+    table-layout: fixed !important;
+    box-shadow: var(--shadow);
+}

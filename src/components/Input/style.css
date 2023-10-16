@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7px 0px;
+    width: 100%;
+}
+
+.label-box {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.input-box,
+.input {
+    width: 100%;
+}
+
+.input {
+    padding: 0.5rem 0px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid#0000008e;
+}
+
+.input:focus {
+    outline: none;
+}
