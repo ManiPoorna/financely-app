@@ -119,19 +119,20 @@ const LoginPage = () => {
 				theme="light"
 			/>
 			{
-				loader ? <Loader /> : ""
+				loader ? <Loader /> : 
+					<div className="signup-form app-flex">
+						<form className="form-control-login">
+							<h2>Login to <span style={{ color: "var(--theme)" }}>Financely.</span></h2>
+							<Input label="Email" type="email" placeholder="Example@123" value={email} setValue={setEmail} />
+							<Input label="Password" type="password" placeholder="**********" value={password} setValue={setPassword} />
+							<Button onClick={loginWithEmail} text="Login" tyeOfLogin={false} loader={loader} />
+							<p style={{ textAlign: "center" }}>Or</p>
+							<Button onClick={loginWithGoogle} text="Login with Google" tyeOfLogin={true} loader={loader} />
+							<p style={{ textAlign: "center", padding: "0.7rem 0px 0px 0px" }}>Don't have an Account? <NavLink to="/signup">Signup</NavLink></p>
+						</form>
+					</div>
 			}
-	<div className="signup-form app-flex">
-        <form className="form-control-login">
-          <h2>Login to <span style={{ color: "var(--theme)" }}>Financely.</span></h2>
-          <Input label="Email" type="email" placeholder="Example@123" value={email} setValue={setEmail} />
-          <Input label="Password" type="password" placeholder="**********" value={password} setValue={setPassword} />
-          <Button onClick={loginWithEmail} text="Login" tyeOfLogin={false} loader={loader} />
-          <p style={{ textAlign: "center" }}>Or</p>
-          <Button onClick={loginWithGoogle} text="Login with Google" tyeOfLogin={true} loader={loader} />
-					<p style={{ textAlign: "center", padding:"0.7rem 0px 0px 0px" }}>Don't have an Account? <NavLink to="/signup">Signup</NavLink></p>
-        </form>
-      </div>
+	
     </div>
   )
 }
