@@ -16,7 +16,7 @@ const Header = () => {
       navigate("/financely-dashboard")
     }
     else {
-      navigate("/signup")
+      navigate("/financely-app")
     }
   },[user,loading])
 
