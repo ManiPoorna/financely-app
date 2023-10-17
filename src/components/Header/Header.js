@@ -15,9 +15,6 @@ const Header = () => {
     if (user) {
       navigate("/financely-dashboard")
     }
-    else {
-      navigate("/financely-app")
-    }
   },[user,loading,navigate])
 
   function logout() {
