@@ -14,7 +14,7 @@ const NoPageFound = () => {
      navigate("/financely-dashnoard") 
     }
     else {
-      navigate("/signup");
+      navigate("/financely-app");
     }
   }
 
