@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, Modal, DatePicker, Select, Input, Button } from 'antd';
+import { Form, Modal, DatePicker, Select, Input, Button, InputNumber } from 'antd';
 import "./style.css"
 
 const IncomeModal = ({ isIncomeModalOpen, closeIncomeModal, onSubmit }) => {
@@ -36,7 +36,7 @@ const IncomeModal = ({ isIncomeModalOpen, closeIncomeModal, onSubmit }) => {
             name="amount"
             rules={[{ required: true, message: "Please enter Amount" }]}
           >
-            <Input className='ant-input' />
+            <InputNumber className='ant-input' />
           </Form.Item>
           <Form.Item
             label="Date"
